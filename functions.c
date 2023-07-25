@@ -52,19 +52,19 @@ print_char('0');
 count++;
 }
 
-digits = (int *) malloc(sizeof(int));
+digit = (int *) malloc(sizeof(int));
 while (num > 0)
 {
-digits = (int *) realloc(digits, (i + 1) * sizeof(int));
+digit = (int *) realloc(digit, (i + 1) * sizeof(int));
 digit[i] = num % 10;
 num /= 10;
 count++;
 }
 for (i = i - 1; i >= 0; i--)
 {
-print_char(digits[i] + '0');
+print_char(digit[i] + '0');
 }
-free(digits);
+free(digit);
 return (count);
 
 }

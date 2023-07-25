@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 int print_char(char c);
 int print_string(char *c);
