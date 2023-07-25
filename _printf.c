@@ -41,6 +41,8 @@ case '%':
 count += print_char('%');
 break;
 }
+default:
+count += print_char(*format);
 }
 }
 else
