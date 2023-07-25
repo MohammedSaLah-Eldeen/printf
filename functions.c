@@ -20,6 +20,10 @@ int print_string(char *c)
 int len_str = strlen(c);
 int i;
 
+if (c == NULL)
+{
+c = "(nil)";
+}
 for (i = 0; i < len_str; i++)
 {
 print_char(c[i]);
