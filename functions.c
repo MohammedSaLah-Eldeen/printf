@@ -17,13 +17,14 @@ return (write(1, &c, 1));
 */
 int print_string(char *c)
 {
-int len_str = strlen(c);
+int len_str;
 int i;
 
 if (c == NULL)
 {
 c = "(null)";
 }
+len_str = strlen(c);
 for (i = 0; i < len_str; i++)
 {
 print_char(c[i]);
