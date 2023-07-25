@@ -22,7 +22,7 @@ int i;
 
 if (c == NULL)
 {
-c = "(nil)";
+c = "(null)";
 }
 for (i = 0; i < len_str; i++)
 {
