@@ -38,8 +38,8 @@ return (len_str);
 */
 int print_number(int num)
 {
-int count = 0;
-int digit;
+int count = 0, i = 0;
+int *digit = NULL;
 if (num < 0)
 {
 print_char('-');
@@ -51,13 +51,20 @@ if (num == 0)
 print_char('0');
 count++;
 }
+
+digits = (int *) malloc(sizeof(int));
 while (num > 0)
 {
-digit = num % 10;
-print_char(digit + '0');
+digits = (int *) realloc(digits, (i + 1) * sizeof(int));
+digit[i] = num % 10;
 num /= 10;
 count++;
 }
+for (i = i - 1; i >= 0; i--)
+{
+print_char(digits[i] + '0');
+}
+free(digits);
 return (count);
 
 }
