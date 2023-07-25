@@ -37,7 +37,7 @@ return (len_str);
 * @num: an integer
 * Return: the number of digits in that number
 */
-int print_number(int num)
+int print_number(long int num)
 {
 int count = 0, i = 0;
 int *digit = NULL;

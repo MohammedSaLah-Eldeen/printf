@@ -8,7 +8,7 @@
 
 int print_char(char c);
 int print_string(char *c);
-int print_number(int num);
+int print_number(long int num);
 int _printf(const char *format, ...);
 
 
