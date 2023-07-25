@@ -21,26 +21,18 @@ format++;
 switch (*format)
 {
 case 'c':
-{
 count += print_char(va_arg(args, int));
 break;
-}
 case 's':
-{
 count += print_string(va_arg(args, char*));
 break;
-}
 case 'i':
 case 'd':
-{
 count += print_number(va_arg(args, int));
 break;
-}
 case '%':
-{
 count += print_char('%');
 break;
-}
 default:
 count += print_char('%');
 count += print_char(*format);
