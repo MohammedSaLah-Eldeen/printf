@@ -60,6 +60,7 @@ digit = (int *) realloc(digit, (i + 1) * sizeof(int));
 digit[i] = num % 10;
 num /= 10;
 count++;
+i++;
 }
 for (i = i - 1; i >= 0; i--)
 {
