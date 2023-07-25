@@ -15,9 +15,9 @@ return (write(1, &c, 1));
 * @c: a string
 * Return: the length of a string
 */
-int print_string(char *c);
+int print_string(char *c)
 {
-len_str = strlen(c);
+int len_str = strlen(c);
 int i;
 
 for (i = 0; i < len_str; i++)

@@ -20,7 +20,7 @@ switch (*format)
 {
 case 'c':
 {
-count += print_char(va_arg(args, char));
+count += print_char(va_arg(args, int));
 break;
 }
 case 's':
