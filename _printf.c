@@ -34,7 +34,8 @@ case 'd':
 count += print_number(va_arg(args, int));
 break;
 }
-case '%': {
+case '%':
+{
 count += print_char('%');
 break;
 }
